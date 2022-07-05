@@ -1,0 +1,113 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#main-block{
+    display: flex;
+}
+
+#contacts {
+    display: flex;
+    justify-content: left;
+}
+
+.contact {
+    margin-top: 20px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact li{
+    display: inline;
+    padding-left: 3px;
+}
+
+.contact img {
+    width: auto;
+    height: 24px;
+}
+
+.contact h1{
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-family: 'Trebuchet MS', 'Times New Roman', serif;
+}
+
+.profilepic {
+    background: url(../images/turcati_profile_linkedin.jpg) 60% 4% no-repeat;
+    background-size: 100%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 5px;
+}
+
+#about-me {
+    display: flex;
+    justify-content: left;
+}
+
+.about-me-container {
+    /* background-color: white; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+}
+
+.about-me-text-container {
+    font-family: 'Trebuchet MS', 'Times New Roman', serif;
+    text-align: justify;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.about-me-text-container h2{
+    font-size: large;
+    font-weight: bold;
+}
+
+.about-me-text-container p{
+    margin-top: 15px;
+}
+
+footer {
+    position: relative;
+    margin-top: 80px;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #FFF;
+    width:85%;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    #main-block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-container {
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .about-me-text-container {
+        width: 90%;
+    }
+
+    footer {
+        border-top-width: 0px;
+    }
+}
